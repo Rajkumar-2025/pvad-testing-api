@@ -351,7 +351,7 @@ class DashboardController {
 
         let codes = [];
         if ("admin".startsWith(s)) codes.push(1);
-        if ("user".startsWith(s)) codes.push(2);
+        if ("operation".startsWith(s)) codes.push(2);
 
         if (codes.length === 0) {
           return res.status(200).send({
